@@ -57,6 +57,6 @@ func transactionRollback(t *testing.T) {
 		return nil, errors.New("error")
 	})
 	if err == nil || s.HasTable() {
-		t.Fatal("failed to rollback.")
+		t.Fatal("failed to rollback")
 	}
 }
